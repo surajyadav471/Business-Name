@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Name</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+               Business Name
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#aboutUsId">About Us</a>
+                <a href="#">Know More</a>
+                <a href="#contactUsId">Contact Us</a>
+            </div>
+            </nav>
+            <hr>
+            <section class="text">
+            <div>
+            <h1 class="page">BUSINESS <br>LANDING <br>PAGE</h1>
+        </div>
+            <div class="lorem">
+           <img class="image" src="https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=200" alt="laptop" >
+        </div>
+         </section>
+    </header>
+    <section id="aboutUsId" >
+        <div class="text2" style="background-color: white;display: inline-flex;">
+            <img src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHBvcnRmb2xpb3xlbnww
+            fHwwfHw%3D&auto=format&fit=crop&w=500&q=60"  width="300px;" class="myImg">
+                <h1>ABOUT US</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet ducimus 
+                 in recusandae itaque, quaerat dolorum deleniti ullam ex eveniet asperiores minima provident
+                 praesentium repellat illum minus, ipsam doloremque quia nulla optio corrupti dicta. Reprehenderit et 
+                 maxime libero, eaque exercitationem itaque quas expedita provident ut, ullam assumenda esse alias nihil! 
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, delectus. Ab expedita dignissimos 
+                 consequatur fugiat saepe est quaerat, laudantium nemo cumque omnis repudiandae illum molestias officia reiciendis
+                 ipsum! Impedit, quisquam iure. Corrupti itaque rem quia ab perferendis dignissimos hic incidunt?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias veritatis, amet labore quo dolorem ut, fugit?</p>
+                </div>
+       </section>
+
+       <section id="moreknow">
+        <div class="know-more" style="background-color:white">
+            <h1>OUR SERVICES</h1>
+           
+        </div>
+       </section>
+   /*section for contact us page*/
+    <section id="contactUsId">
+        <div class="intro">
+            <h1>CONTACT US</h1>
+        </div>
+        <form action="text2">
+            <div class="text1">
+                 <input type="text" id="fname" name="firstname" placeholder="Full Name">
+                  <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                  <input type="text" id="lname" name="lastname" placeholder="Email Address">
+                  <input type="text" id="lname" name="lastname" placeholder="Reason for Contacting"><br>
+                  
+                </div>
+               <div class="submit-btn">
+                <input type="submit" value="Submit">
+               </div> 
+            </form>
+    </section>     
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+ $(document).ready(function() {
+$('a[href^="#"]').click(function(event) {
+  
+    var id = $(this).attr("href");
+
+    var offset = 60;
+
+    var target = $(id).offset().top - offset;
+
+    $('html, body').animate({scrollTop:target}, 500);
+    event.preventDefault();
+});
+});
+
+</script>
